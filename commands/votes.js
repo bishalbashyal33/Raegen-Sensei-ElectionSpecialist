@@ -26,7 +26,7 @@ module.exports = {
 		   console.log(first.text());
 		   console.log(second.text());
 		   console.log(third.text());
-		   return interaction.reply(`${first.text()} ${second.text()} ${third.text()}`);
+		   return interaction.reply(`${first.text()} \n ${second.text()} \n ${third.text()}`);
 		 
 		
 		 
