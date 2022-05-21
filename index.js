@@ -17,13 +17,14 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-	client.user.setPresence({
-        status: "online",  // You can show online, idle... Do not disturb is dnd
-        game: {
-            name: "!help",  // The message shown
-            type: "PLAYING" // PLAYING, WATCHING, LISTENING, STREAMING,
-        }
-    });
+	client.user.setPresence({  
+		status: 'available',     //sets status button to green   
+		activity: {  
+		 name: 'Minecraft',    //This is the custom text  
+		 type: 'PLAYING'     //this is the type (duh). 'watching' would also be an option  
+		}
+	   
+	   });
 });
 
 client.on('interactionCreate', async interaction => {
