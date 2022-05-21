@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Intents } = require('discord.js');
-const { token } = require('./config.json');
+//const { token } = require('./config.json');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -17,6 +17,11 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
+	client.user.setActivity("to Kathmandu Mayor Election", {
+		type: "LISTENING",
+		//url: "https://www.twitch.tv/monstercat"
+	  });
+	
 });
 
 client.on('interactionCreate', async interaction => {
@@ -35,4 +40,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 //client.login(token);
-client.login(token);
+client.login(process.env.TOKEN);
