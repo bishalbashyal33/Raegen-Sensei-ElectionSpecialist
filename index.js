@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-	client.user.setStatus('dnd', 'Made by KwinkyWolf') ;
+	
 });
 
 client.on('interactionCreate', async interaction => {
