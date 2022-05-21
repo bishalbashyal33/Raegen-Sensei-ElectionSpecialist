@@ -27,9 +27,7 @@ module.exports = {
 		   console.log(second.text());
 		   console.log(third.text());
 		   return interaction.reply(`${first.text()} \n ${second.text()} \n ${third.text()}`);
-		 
-		
-		 
+
 		  } catch (err) {
 			console.error(err);
 		  }
