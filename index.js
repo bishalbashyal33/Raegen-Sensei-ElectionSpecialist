@@ -17,14 +17,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-	client.user.setPresence({  
-		status: 'available',     //sets status button to green   
-		activity: {  
-		 name: 'Minecraft',    //This is the custom text  
-		 type: 'PLAYING'     //this is the type (duh). 'watching' would also be an option  
-		}
-	   
-	   });
+	client.user.setStatus('dnd', 'Made by KwinkyWolf') ;
 });
 
 client.on('interactionCreate', async interaction => {
