@@ -17,9 +17,9 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-	client.user.setActivity("with depression", {
-		type: "STREAMING",
-		url: "https://www.twitch.tv/monstercat"
+	client.user.setActivity("to Kathmandu Mayor Election", {
+		type: "LISTENING",
+		//url: "https://www.twitch.tv/monstercat"
 	  });
 	
 });
